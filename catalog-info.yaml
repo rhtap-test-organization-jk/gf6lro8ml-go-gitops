@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gf6lro8ml-go-gitops
+  description: This is GitOps manifest for gf6lro8ml-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: gf6lro8ml-go
+    janus-idp.io/tekton: gf6lro8ml-go
+    backstage.io/kubernetes-id: gf6lro8ml-go 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:gf6lro8ml-go

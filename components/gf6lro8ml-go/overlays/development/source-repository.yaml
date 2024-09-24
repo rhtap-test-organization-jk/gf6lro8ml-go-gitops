@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: gf6lro8ml-go-repository
+spec:
+  url: https://github.com/rhtap-test-organization-jk/gf6lro8ml-go
